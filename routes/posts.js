@@ -58,9 +58,14 @@ router.get('/', async (req, res) => {
        ORDER BY p.created_at DESC`
     );
     res.json(rows);
-  } catch {
-    res.status(500).json({ error: 'Failed to get posts' });
-  }
+  } 
+  catch (err) {
+  console.error(err);
+  res.status(500).json({
+    error: "Failed to get posts",
+    details: err.message
+  });
+}
 });
 
 // POST /api/posts
