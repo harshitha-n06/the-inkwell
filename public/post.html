@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post — The Inkwell</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="/index.html" class="nav-logo">The <span>Inkwell</span></a>
+        <div class="nav-search">
+          <form action="/search.html">
+            <input type="text" name="q" placeholder="Search posts...">
+            <button type="submit" class="btn btn-outline btn-sm">Search</button>
+          </form>
+        </div>
+        <div class="nav-auth" id="navAuth"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div id="postContent" class="post-detail">
+        <div class="loading">Loading post…</div>
+      </div>
+
+      <div id="commentsSection" class="comments-section" style="display:none">
+        <h3 id="commentHeading">Comments</h3>
+        <div id="commentList"></div>
+
+        <div id="commentFormWrap" class="comment-form" style="display:none">
+          <div id="commentMsg"></div>
+          <textarea id="commentText" placeholder="Share your thoughts…"></textarea>
+          <button id="submitComment" class="btn btn-primary btn-sm">Post Comment</button>
+        </div>
+        <div id="commentLoginNote" style="display:none;margin-top:1rem;font-size:.875rem;color:var(--muted)">
+          <a href="/login.html" style="color:var(--primary)">Sign in</a> to leave a comment.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container"><p>&copy; 2024 The Inkwell</p></div>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/post.js"></script>
+</body>
+</html>

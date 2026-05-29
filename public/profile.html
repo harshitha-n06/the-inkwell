@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile — The Inkwell</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="/index.html" class="nav-logo">The <span>Inkwell</span></a>
+        <div class="nav-search">
+          <form action="/search.html">
+            <input type="text" name="q" placeholder="Search posts...">
+            <button type="submit" class="btn btn-outline btn-sm">Search</button>
+          </form>
+        </div>
+        <div class="nav-auth" id="navAuth"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div id="profileContent">
+        <div class="loading">Loading profile…</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container"><p>&copy; 2024 The Inkwell</p></div>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/profile.js"></script>
+</body>
+</html>
